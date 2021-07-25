@@ -25,7 +25,7 @@ SECRET_KEY = 'sttc6w@j2goe#6=zm--^*@u-$9a30v(3d+)q7s$z&9t)3eik25'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['aolchantingapp.herokuapp.com','localhost','127.0.0.1']
+ALLOWED_HOSTS = ['aolchantingapp.herokuapp.com']
 
 
 # Application definition
