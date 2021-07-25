@@ -83,14 +83,25 @@ WSGI_APPLICATION = 'aolChantingBackend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'chanting_database',
+#         'USER': 'admin',
+#         'PASSWORD': 'guruji@13',
+#         'HOST': 'localhost',
+#         'PORT': '3306',
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'chanting_database',
-        'USER': 'admin',
-        'PASSWORD': 'guruji@13',
-        'HOST': 'localhost',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dfljitlf743ete',
+        'USER': 'zkqhtqhqwusoig',
+        'PASSWORD': '4d6c77ac55e20ed7ec6583185f6900e1005dab7754d1fc2fd6286e336c4cc6c2',
+        'HOST': 'ec2-54-236-137-173.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
@@ -135,9 +146,9 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+# # Extra places for collectstatic to find static files.
+# STATICFILES_DIRS = (
+#     os.path.join(BASE_DIR, 'static'),
+# )
